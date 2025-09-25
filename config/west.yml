@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: efremovich
+      url-base: https://github.com/efremovich
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: ilich-zmk-module
+      remote: efremovich
+      revision: master
+  self:
+    path: config
